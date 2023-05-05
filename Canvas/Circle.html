@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas - Circle</title>
+</head>
+
+<body>
+    <canvas id="cv" width="600px" height="500px" style="
+    border: 1px solid #000;">
+        <script>
+            let canvas = document.getElementById("cv");
+            let ctx = canvas.getContext("2d");
+
+            // Filled Circle with edge
+           /*
+            ctx.beginPath();
+            ctx.strokeStyle = "red"; //circle edge
+            ctx.arc(200,195,90,0,2*Math.PI);
+            ctx.fillStyle = "black"; //circle inner color
+            ctx.fill();
+            ctx.stroke();
+            ctx.endPath();
+            */
+
+            // Empty circle
+            ctx.beginPath();
+            ctx.strokeStyle = "black"; //circle edge
+            ctx.arc(400, 295, 90, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.endPath();
+
+        </script>
+</body>
+
+</html>
