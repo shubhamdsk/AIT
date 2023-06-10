@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration</title>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        input[type="email"],
+        select,
+        input[type="password"],
+        input[type="date"] {
+            width: 90%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #d80e4b;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0d90db;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form action="Que9.php" method="POST">
+            <label for="stud_id">Student ID:</label>
+            <input type="text" id="stud_id" name="stud_id" required>
+
+            <label for="stud_name">Student Name:</label>
+            <input type="text" id="stud_name" name="stud_name" required>
+
+            <label for="stud_contact">Contact Number:</label>
+            <input type="text" id="stud_contact" name="stud_contact" required>
+
+            <label for="stud_email">Email ID:</label>
+            <input type="email" id="stud_email" name="stud_email" required>
+
+            <label for="stud_dob">Date of Birth:</label>
+            <input type="date" id="stud_dob" name="stud_dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
